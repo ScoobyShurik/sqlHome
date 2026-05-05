@@ -59,9 +59,10 @@ insert into album_singer  (singer, album) values
 
 
 insert into track_collection  (collection, track) values 
-(1, 14), (1, 15),
-(2, 12), (2, 16),
-(3, 17), (3, 13),
-(4, 12), (4, 14),
-(5, 18), (5, 20),
-(6, 19), (6, 21);
+(1, 3), (1, 4),
+(2, 1), (2, 5),
+(3, 6), (3, 2),
+(4, 1), (4, 3),
+(5, 7), (5, 9),
+(6, 8), (6, 10);
+
