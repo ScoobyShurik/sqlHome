@@ -4,7 +4,7 @@ CREATE TABLE public.jenre (
 	CONSTRAINT jenre_pk PRIMARY KEY (id)
 );
 
-CREATE TABLE public.singer (
+CREATE TABLE public.singers (
 	id int GENERATED ALWAYS AS IDENTITY NOT NULL,
 	"name" varchar NOT NULL,
 	jenre int NOT NULL,
@@ -66,7 +66,7 @@ ALTER TABLE public.singers DROP CONSTRAINT singers_jenre_fk;
 ALTER TABLE public.singers DROP COLUMN jenre;
 
 
-CREATE TABLE public.newtable (
+CREATE TABLE public.jenres_singers (
 	id int GENERATED ALWAYS AS IDENTITY NOT NULL,
 	singer int NULL,
 	jenre int NULL,
