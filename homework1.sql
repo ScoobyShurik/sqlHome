@@ -46,7 +46,7 @@ CREATE TABLE public.track_collection (
 	collection int NOT NULL,
 	CONSTRAINT track_collection_pk PRIMARY KEY (id),
 	CONSTRAINT track_collection_track_fk FOREIGN KEY (track) REFERENCES public.track(id) ON DELETE CASCADE ON UPDATE CASCADE,
-	CONSTRAINT track_collection_collection_fk FOREIGN KEY (id) REFERENCES public.collection(id) ON DELETE CASCADE ON UPDATE CASCADE
+	CONSTRAINT track_collection_collection_fk FOREIGN KEY (collection) REFERENCES public.collection(id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 
